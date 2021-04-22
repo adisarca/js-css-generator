@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>CSS Generator || Background Gradient</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="header-title"><a href="index.html">CSS Generator</a></div>
+        <div class="items">
+            <h5 class="side-title">Background</h5>
+            <a href="background-color.html" id="bg-color">Background Color</a>
+            <a href="background-gradient.html" id="bg-gradient">Background Gradient</a>
+            <a href="background-img.html" id="bg-image">Background Image</a>
+        </div>
+    </div>
+    <div id="custom">
+        <div class="header-title">Background Gradient</div>
+        <div id="settings">
+               
+            <div class="colorGroup">
+                <h5>Color 1</h5>
+                <input type="color" class="iColor" value="#5351d3" id="color1">
+                <input type="text" class="iText" placeholder="Hex Code" id="tColor1">
+            </div>
+
+            <div class="colorGroup">
+                <h5>Color 2</h5>
+                <input type="color" class="iColor" value="#26f052" id="color2">
+                <input type="text" class="iText" placeholder="Hex Code" id="tColor2">
+            </div>
+
+            <div class="rangeGroup">
+                <h5>Color 1</h5>
+            <input type="range" min="0" max="100" value="0" id="pColor1">
+            </div>
+            
+            <div class="rangeGroup">
+                <h5>Color 2</h5>
+            <input type="range" min="0" max="100" value="100" id="pColor2">
+            </div>
+            <div class="rangeGroup">
+                <h5>Angle</h5>
+            <input type="range" min="0" max="360" value="90" id="angle">       
+            </div>
+        </div>
+    </div>
+
+    <div id="preview">
+        <div class="header-title">Preview</div>
+        <div id="box"></div>
+
+        <div id="code">
+            <div class="header-title" style="color: white;">CSS CODE</div>
+            <div class="copy">
+                <div class="css">CSS</div>
+                <div id="cssCode">
+                    <div id="colorVal"></div>
+                </div>
+                <div class="btnCopy">COPY</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bg-gen.js"></script>
+</body>
+</html>

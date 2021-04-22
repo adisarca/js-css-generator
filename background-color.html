@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <title>CSS Generator</title>
+    <title>CSS Generator || Background Color</title>
 </head>
+
 <body>
     <div id="sidebar">
         <div class="header-title"><a href="index.html">CSS Generator</a></div>
@@ -19,22 +21,36 @@
             <a href="background-img.html" id="bg-image">Background Image</a>
         </div>
     </div>
+    <div id="custom">
+        <div class="header-title">Background Color</div>
+        <div id="settings">
+            <div class="colorGroup">
+                <input type="color" class="iColor" value="#5351d3">
+                <input type="text" class="iText" placeholder="Hex Code">
+            </div>
 
+        </div>
+    </div>
 
-    <div id="dashboard">
-        <div class="header-title">Dashboard</div>
-        <div id="choose">
-            <div class="choose-title">Background</div>
-            <div class="cBg">
-                <button class="cBtn" id="bgColor">Background Color</button>
-                <button class="cBtn" id="bgGrad">Background Gradient</button>
-                <button class="cBtn" id="bgImg">Background Image</button>
+    <div id="preview">
+        <div class="header-title">Preview</div>
+        <div id="box"></div>
+
+        <div id="code">
+            <div class="header-title" style="color: white;">CSS CODE</div>
+            <div class="copy">
+                <div class="css">CSS</div>
+                <div id="cssCode">
+                    <div>background-color: &nbsp<span id="colorVal">#5351d3</span>;</div>
+                </div>
+                <div class="btnCopy">COPY</div>
             </div>
         </div>
     </div>
 
 
 
-    <script src="main.js"></script>
+    <script src="./js/bg-col.js"></script>
 </body>
+
 </html>
